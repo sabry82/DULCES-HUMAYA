@@ -19,6 +19,13 @@
     z-index: -1;
     background-size:cover;
 }
+.nav-link {
+    color: white;
+}
+
+.colorTituloLogo {
+    color: white;
+}
 
 .tit-productos {
     background-color: gray;
