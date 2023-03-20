@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    color: white;
+    height:600px;
+}
+
+.header .btn-primary {
+    background-color: #29A644;
+    border: #29A644;
+}
+
+.headerImage {
+    position: absolute;
+    background-image: url(/IMAGENES/Central/imagenCentral.png);
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size:cover;
+}
+
+.tit-productos {
+    background-color: gray;
+    color: white;
+    font-size: 2em;
+}
+.alfajor {
+    background-color: bisque;
+}
+
+.contacto {
+    background-color: darkgray;
+}
+
+.contacto-tit{
+    color: white;
+    font-size: 2em;
+}
+
+/* @media (max-width: 576px) {
+    .headerImage {
+        background-image: url(/imagenCentral.png) !important;
+    }
+  } */

@@ -1,64 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HUMAYA</title>
     <!--Estilos de Bootstrap y propios-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="img-fluid">
-    <header>
+    <header class="header">
+        <div class="headerImage"></div>
         <!--Nav mobile-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand" href="#">
-                        <img src="IMAGENES/Logo/HconDulce100x100.png" alt="" width="48" height="48" class="d-inline-block align-text-top">
+                        <img src="/IMAGENES/Logo/HconDulce100x100.png" alt="" width="48" height="48"
+                            class="d-inline-block align-text-top" />
                         <a class="navbar-brand colorTituloLogo" href="#">HUMAYA</a>
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Locales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contacto</a>
-                    </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <section>
+            <div class="container col-xxl-8 px-4 py-5 header">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">
+                            Responsive left-aligned hero with image
+                        </h1>
+                        <p class="lead">
+                            Quickly design and customize responsive
+                            mobile-first sites with Bootstrap, the world’s
+                            most popular front-end open source toolkit,
+                            featuring Sass variables and mixins, responsive
+                            grid system, extensive prebuilt components, and
+                            powerful JavaScript plugins.
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                                Primary
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                                Default
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
-    
+
     <main>
         <!--Presentación-->
+        <div class="text-center tit-productos w-100">
+            <div class="row">
+                <div class="col py-4">PRODUCTOS</div>
+            </div>
+        </div>
 
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/IMAGENES/Productos/Producto1.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DULCE DE LECHE TRADICIONAL</h5>
+                        <p>
+                            Elaboracion artesanal de principio a fin,sabor
+                            intenso. Receta tradicional.
+                        </p>
+                        <p>Presentacion en frasco de vidrio de 500g.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="Nuestros productos"
+                            data-bs-title="This top tooltip is themed via CSS variables.">
+                            Donde consegruilo
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMAGENES/Productos/Producto2.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                            Some representative placeholder content for the
+                            second slide.
+                        </p>
+                        <p>Presentacion en frasco de vidrio de 500g.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="Nuestros productos"
+                            data-bs-title="This top tooltip is themed via CSS variables.">
+                            Donde consegruilo
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMAGENES/Productos/Producto3.png" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                            Some representative placeholder content for the
+                            third slide.
+                        </p>
+                        <p>Presentacion en frasco de vidrio de 500g.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="Nuestros productos"
+                            data-bs-title="This top tooltip is themed via CSS variables.">
+                            Donde consegruilo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-center w-100 alfajor">
+            <div class="row">
+                <div class="col py-4">
+                    <h3>ALFAJORES DE MAICENA</h3>
+                    <p class="fs-3 text-center">.fs-3 text</p>
+                    <p class="fs-4 text-center">.fs-4 text</p>
+                    <button class="btn btn-secondary">Mas info</button>
+                </div>
+                <div class="col py-4">
+                    <img src="/IMAGENES/Productos/alfajor.png" width="400px" />
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="text-center tit-productos w-100">
+                <div class="row">
+                    <div class="col py-4">RECETAS</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m-4">
+                    <div class="card">
+                        <img src="/IMAGENES/Productos/cockies.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text
+                                below as a natural lead-in to additional
+                                content. This content is a little bit
+                                longer.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-4">
+                    <div class="card">
+                        <img src="/IMAGENES/Productos/conitos.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This card has supporting text below as a
+                                natural lead-in to additional content.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-4">
+                    <div class="card">
+                        <img src="/IMAGENES/Productos/torta-nuit.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text
+                                below as a natural lead-in to additional
+                                content. This card has even longer content
+                                than the first to show that equal height
+                                action.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+        <div class="text-center tit-productos w-100">
+            <div class="row">
+                <div class="col py-4">CALIDAD</div>
+            </div>
+            <div class="row py-5">
+                <div class="col-xs-0 col-sm-3"></div>
+                <!-- icono -->
+                <div class="col-xs-12 col-sm-2">
+                    <div class="row">
+                        <i class="fa-brands fa-pagelines" style="font-size: 2em"></i>
+                    </div>
+                    <p style="font-size: 0.5em">100% ORGANICO</p>
+                </div>
+                <!-- icono -->
+                <div class="col-xs-12 col-sm-2">
+                    <div class="row">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation" style="font-size: 2em"></i>
+                    </div>
+                    <p style="font-size: 0.5em">SIN TACC</p>
+                </div>
+                <!-- icono -->
+                <div class="col-xs-12 col-sm-2">
+                    <div class="row">
+                        <i class="fa-solid fa-flask" style="font-size: 2em"></i>
+                    </div>
+                    <p style="font-size: 0.5em">SIN CONCERVANTES</p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="text-center contacto">
+                <div class="row">
+                    <div class="col py-4 contacto-tit">CONTACTO</div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-xs-0 col-sm-2"></div>
+                    <!-- -->
+                    <div class="col-xs-12 col-sm-8">
+                        
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email
+                                </label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu
+                                    comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-outline-dark">
+                                ENVIAR
+                            </button>
+                        
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-xs-0 col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+            
+                       
+                        
+        </section>
     </main>
 
-    <footer>
-        
+    <footer style="background-color: black">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">
+                    &copy; 2022 Company, Inc
+                </p>
+
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="text-muted" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">About</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </footer>
 
-<!--Scripts de Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Scripts de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
